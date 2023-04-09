@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<audio id="d" controls="controls"></audio>
+		<script>
+			var d=document.getElementById("d");
+			var arr=location.toString().split("?")
+			d.src=arr[1]
+			document.onclick=function(){
+				d.play()
+			}
+		</script>
+	</body>
+</html>
